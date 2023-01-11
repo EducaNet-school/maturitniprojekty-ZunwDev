@@ -8,7 +8,7 @@
 
 <?php
 
-if (isset($_POST['submit'])) {
+function validate() {
     $jmeno = $_POST['jmeno'];
     $adresa = $_POST['adresa'];
     if (!empty($jmeno) && strpos($jmeno, " ") && !empty($adresa) && strlen($adresa) > 10) {
@@ -16,4 +16,8 @@ if (isset($_POST['submit'])) {
     } else {
         echo "nn";
     }
+}
+
+if (isset($_POST['submit'])) {
+    validate();
 }
