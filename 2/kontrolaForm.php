@@ -11,13 +11,9 @@
 function validate() {
     $jmeno = $_POST['jmeno'];
     $adresa = $_POST['adresa'];
-    if (!empty($jmeno) && strpos($jmeno, " ") && !empty($adresa) && strlen($adresa) > 10) {
-        echo "jj";
-    } else {
-        echo "nn";
-    }
+    return !empty($jmeno) && strpos($jmeno, " ") && !empty($adresa) && strlen($adresa) > 10 ? "1" : "0";
 }
 
 if (isset($_POST['submit'])) {
-    validate();
+    echo validate();
 }
