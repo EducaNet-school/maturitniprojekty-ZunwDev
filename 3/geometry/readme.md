@@ -1,0 +1,1 @@
+Mělo by jít vše bez problému //Neni osetreny ruznostranny trojuhelnik, bohuzel
